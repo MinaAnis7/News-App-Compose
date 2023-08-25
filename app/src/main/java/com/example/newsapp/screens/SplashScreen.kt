@@ -24,12 +24,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.example.newsapp.ui.theme.Purple40
-import com.example.newsapp.ui.theme.Purple80
+import com.example.newsapp.darkTheme
+import com.example.newsapp.ui.theme.PrimaryColor
 import kotlinx.coroutines.delay
 
 @Composable
@@ -60,7 +59,7 @@ fun Splash(alpha: Float)
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = Purple40),
+            .background(color = if (darkTheme) Color(0xFF3F2E3E) else PrimaryColor),
         contentAlignment = Alignment.Center,
         )
     {

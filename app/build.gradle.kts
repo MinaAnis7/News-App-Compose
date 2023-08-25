@@ -72,5 +72,9 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:4.2.2")
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
     implementation("androidx.compose.material:material-icons-extended:1.5.0")
+    implementation("io.coil-kt:coil-compose:2.4.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.0")
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
 
 }

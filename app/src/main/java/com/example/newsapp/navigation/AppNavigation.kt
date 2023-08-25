@@ -1,5 +1,6 @@
 package com.example.newsapp.navigation
 
+import android.content.SharedPreferences
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -8,7 +9,7 @@ import com.example.newsapp.screens.AnimatedSplashScreen
 import com.example.newsapp.screens.HomeScreen
 
 @Composable
-fun AppNavigation()
+fun AppNavigation(sharedPreferences: SharedPreferences)
 {
     val navController = rememberNavController()
 
@@ -21,7 +22,7 @@ fun AppNavigation()
 
         composable("home")
         {
-            HomeScreen()
+            HomeScreen(sharedPreferences)
         }
     }
 }
